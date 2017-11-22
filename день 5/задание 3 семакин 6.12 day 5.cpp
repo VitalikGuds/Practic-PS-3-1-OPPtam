@@ -20,8 +20,8 @@ int _tmain(int argc, _TCHAR* argv[])
 {
     SetConsoleCP(1251);  SetConsoleOutputCP(1251);
  
-    tablica a;
-    tablica mas[30];
+    int a;
+    int mas[30];
     float s=0, sred;
     int n;
  
@@ -42,21 +42,7 @@ int _tmain(int argc, _TCHAR* argv[])
  
     s = s / n;
     cout << "Overall average score:" << s << endl;
-    cout << endl;
-    cout << "students whose average ball is above average" << endl;
-    cout << endl;
-    cout << "| last name | average score |" << endl;
-    cout << "--------------------------" << endl;
- 
-    for (int i=0; i<n; i++)
-        if (mas[i].sred > s)
-        {
-            cout << "|" << setw(9) << "|" << endl;
-            cout << setprecision(2) << mas[i].sred << endl;
-        }
- 
-    cout << "--------------------------" << endl;   
-    
+  
  
     system("pause");
     return 0;
